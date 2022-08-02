@@ -80,9 +80,9 @@ const questions = data => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     return new Promise((resolve, reject) => {
-        fs.writeFile('README.md', JSON.stringify(data), err => {
+        fs.writeFile('README.md', data, err => {
             if (err) {
                 reject(err);
                 return;
