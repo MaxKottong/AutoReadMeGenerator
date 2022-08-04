@@ -1,40 +1,40 @@
 
-        # m
-        [![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT
+# MaxHub
+[![GitHub license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-        ## Description
+## Description
     
-        m
+Its the greatest project to ever exist.
 
-        ## Table of Contents
+## Table of Contents
         
-        * [Installation](#installation)
+* [Installation](#installation)
 
-        * [Usage](#usage)
+* [Usage](#usage)
 
-        * [License](#license)
+* [License](#license)
         
-        * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-        * [Tests](#tests)
+* [Tests](#tests)
 
-        * [Questions](#questions)
+* [Questions](#questions)
 
-        ## Installation
-        To install necessary dependencies, run the following command:
-        m
+## Installation
+To install necessary dependencies, run the following command:
+npm i
 
-        ## Usage
-        m
+## Usage
+Use it wisely.
 
-        
 
-        ## Contributing
-        m
 
-        ## Tests
-        To run tests, run the following command:
-        m
+## Contributing
+Contact me for info!
 
-        ## Questions
-        If you have any questions about the repo, open an issue or contact me directly at m. You can find mmore of my work at [m](https://www.github.com/ + m).
+## Tests
+To run tests, run the following command:
+npm test
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at max.kottong@gmail.com. You can find more of my work at [MaxKottong](https://www.github.com/MaxKottong).

@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const emailValidator = require('email-validator');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
@@ -22,7 +23,16 @@ const questions = data => {
             {
                 type: 'input',
                 name: 'email',
-                message: 'What is your email address?'
+                message: 'What is your email address?',
+                validate: emailInput => {
+                    if (emailValidator.validate(emailInput)) {
+                        return true;
+                    }
+                    else {
+                        console.log('Please enter a valid email address');
+                        return false;
+                    }
+                }
             },
             {
                 type: 'input',
@@ -57,14 +67,16 @@ const questions = data => {
                 choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
             },
             {
-                type: 'input',
+                type: 'list',
                 name: 'npmInstall',
-                message: 'What command should be run to install dependencies?'
+                message: 'What command should be run to install dependencies?',
+                choices: ['npm i']
             },
             {
-                type: 'input',
+                type: 'list',
                 name: 'npmTests',
-                message: 'What command should be run to run tests?'
+                message: 'What command should be run to run tests?',
+                choices: ['npm test']
             },
             {
                 type: 'input',
